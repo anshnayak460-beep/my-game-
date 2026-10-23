@@ -1,0 +1,133 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b16">
+<meta name="description" content="GameZone India - Play free browser games including racing, chess, snake, puzzles and arcade games.">
+<title>GameZone India | Play Free Games</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">🎮 GameZone<span>India</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#games">Games</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">⚡ YOUR NEXT LEVEL STARTS HERE</span>
+    <h1>Play More.<br><span>Live the Game.</span></h1>
+    <p>Discover free browser games, beat your high scores and challenge yourself. No downloads required.</p>
+    <a class="primary-btn" href="#games">Explore Games →</a>
+    <div class="hero-stats">
+      <div><strong>15+</strong><small>Games</small></div>
+      <div><strong>100%</strong><small>Free to play</small></div>
+      <div><strong>0</strong><small>Downloads</small></div>
+    </div>
+  </div>
+  <div class="hero-art" aria-label="Gaming illustration">
+    <div class="orbit orbit-one"></div>
+    <div class="orbit orbit-two"></div>
+    <div class="controller">🎮</div>
+    <div class="floating-icon icon-one">🏆</div>
+    <div class="floating-icon icon-two">👾</div>
+    <div class="floating-icon icon-three">🚀</div>
+  </div>
+</section>
+
+<section class="games-section" id="games">
+  <div class="section-heading">
+    <div>
+      <span class="eyebrow">THE GAME LIBRARY</span>
+      <h2>Choose Your <span>Adventure</span></h2>
+      <p>Pick a game and start playing instantly.</p>
+    </div>
+    <input id="gameSearch" type="search" placeholder="🔍 Search games..." aria-label="Search games">
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="filter active" data-category="all">All Games</button>
+    <button class="filter" data-category="arcade">Arcade</button>
+    <button class="filter" data-category="sports">Sports</button>
+    <button class="filter" data-category="puzzle">Puzzle</button>
+    <button class="filter" data-category="racing">Racing</button>
+  </div>
+
+  <div class="game-grid" id="gameGrid">
+    <a class="game-card" data-category="sports" href="games/basketball.html">
+      <div class="game-art art-orange">🏀</div><div class="game-info"><span>SPORTS</span><h3>Basketball</h3><p>Test your shooting skills.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="racing" href="games/bike-racing.html">
+      <div class="game-art art-blue">🏍️</div><div class="game-info"><span>RACING</span><h3>Bike Racing</h3><p>Race against obstacles.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="arcade" href="games/brick-breaker.html">
+      <div class="game-art art-purple">🧱</div><div class="game-info"><span>ARCADE</span><h3>Brick Breaker</h3><p>Break every brick.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="racing" href="games/car-racing.html">
+      <div class="game-art art-red">🏎️</div><div class="game-info"><span>RACING</span><h3>Car Racing</h3><p>Avoid traffic and survive.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="puzzle" href="games/chess.html">
+      <div class="game-art art-light">♟️</div><div class="game-info"><span>STRATEGY</span><h3>Chess</h3><p>Plan your next move.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="arcade" href="games/flappy-bird.html">
+      <div class="game-art art-sky">🐦</div><div class="game-info"><span>ARCADE</span><h3>Flappy Bird</h3><p>Fly through the pipes.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="puzzle" href="games/math-game.html">
+      <div class="game-art art-green">🧠</div><div class="game-info"><span>PUZZLE</span><h3>Math Game</h3><p>Challenge your brain.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="puzzle" href="games/memory.html">
+      <div class="game-art art-pink">🃏</div><div class="game-info"><span>PUZZLE</span><h3>Memory Match</h3><p>Match the hidden pairs.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="sports" href="games/ping-pong.html">
+      <div class="game-art art-cyan">🏓</div><div class="game-info"><span>SPORTS</span><h3>Ping Pong</h3><p>Keep the ball in play.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="puzzle" href="games/puzzle.html">
+      <div class="game-art art-purple">🧩</div><div class="game-info"><span>PUZZLE</span><h3>Puzzle</h3><p>Solve the challenge.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="arcade" href="games/runner.html">
+      <div class="game-art art-orange">🏃</div><div class="game-info"><span>ARCADE</span><h3>Runner</h3><p>Jump and dodge obstacles.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="arcade" href="games/snake.html">
+      <div class="game-art art-green">🐍</div><div class="game-info"><span>ARCADE</span><h3>Snake</h3><p>Grow without crashing.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="arcade" href="games/space-shooter.html">
+      <div class="game-art art-blue">🚀</div><div class="game-info"><span>ARCADE</span><h3>Space Shooter</h3><p>Defend the galaxy.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="arcade" href="games/target-shooter.html">
+      <div class="game-art art-red">🎯</div><div class="game-info"><span>ARCADE</span><h3>Target Shooter</h3><p>Hit targets and score.</p><b>Play Now →</b></div>
+    </a>
+    <a class="game-card" data-category="puzzle" href="games/tic-tac-toe.html">
+      <div class="game-art art-cyan">⭕</div><div class="game-info"><span>PUZZLE</span><h3>Tic Tac Toe</h3><p>Challenge a friend.</p><b>Play Now →</b></div>
+    </a>
+  </div>
+  <p class="no-results" id="noResults" hidden>No games found. Try another search.</p>
+</section>
+
+<section class="callout">
+  <span>🏆</span>
+  <h2>Ready to beat your high score?</h2>
+  <p>Your next favourite game is just one click away.</p>
+  <a class="primary-btn" href="#games">Let's Play</a>
+</section>
+</main>
+
+<footer>
+  <a class="brand" href="index.html">🎮 GameZone<span>India</span></a>
+  <p>Free games. Big fun. Every day.</p>
+  <div><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  <small>© <span id="year"></span> GameZone India</small>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+```
