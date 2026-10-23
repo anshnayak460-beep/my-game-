@@ -1,0 +1,86 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | GameZone India</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html">🎮 GameZone<span>India</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#games">Games</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="games-section">
+  <span class="eyebrow">GET IN TOUCH</span>
+  <h1>Contact <span>Us</span></h1>
+  <div class="callout">
+    <span>💬</span>
+    <h2>Have feedback or an idea?</h2>
+    <p>Tell us about a bug, suggest a new game, or share your feedback.</p>
+    <p>This static website does not have a message server, so this form opens your email app to send the message.</p>
+
+    <form id="contactForm" style="max-width:520px;margin:25px auto;text-align:left">
+      <label for="name">Your name</label>
+      <input id="name" name="name" required maxlength="80" style="width:100%;padding:12px;margin:8px 0 16px">
+
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" required maxlength="120" style="width:100%;padding:12px;margin:8px 0 16px">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required maxlength="2000" rows="5" style="width:100%;padding:12px;margin:8px 0 16px"></textarea>
+
+      <button class="primary-btn" type="submit" style="border:0;cursor:pointer">Open Email App →</button>
+    </form>
+    <p id="formStatus" role="status"></p>
+  </div>
+</main>
+
+<footer>
+  <a class="brand" href="index.html">🎮 GameZone<span>India</span></a>
+  <p>Free games. Big fun. Every day.</p>
+  <small>© <span id="year"></span> GameZone India</small>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !message) return;
+
+  /*
+    Replace this address with your real contact email.
+    A static GitHub Pages site cannot send email directly.
+  */
+  const contactEmail = "YOUR_EMAIL@example.com";
+
+  if (contactEmail === "YOUR_EMAIL@example.com") {
+    document.getElementById("formStatus").textContent =
+      "Please replace YOUR_EMAIL@example.com in contact.html with your real email address.";
+    return;
+  }
+
+  const subject = encodeURIComponent("GameZone India feedback");
+  const body = encodeURIComponent(
+    "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message
+  );
+
+  window.location.href =
+    "mailto:" + contactEmail + "?subject=" + subject + "&body=" + body;
+});
+</script>
+</body>
+</html>
+```
